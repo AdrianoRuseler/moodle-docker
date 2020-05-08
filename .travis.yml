@@ -63,7 +63,7 @@ install:
     - export MOODLE_DOCKER_WWWROOT="$HOME/moodle"
     - export MOODLE_DOCKER_PHP_VERSION=$PHP
 before_script:
-    - apt-get install git -y
+    # - apt-get install git -y
     - tests/setup.sh
 script:
     - tests/test.sh
