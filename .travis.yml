@@ -52,13 +52,12 @@ env:
     #- "PHP=7.3 DB=mysql   GIT=v3.7.2 SUITE=behat BROWSER=chrome"
     #- "PHP=7.2 DB=mysql   GIT=v3.5.8 SUITE=behat BROWSER=firefox"
     # MariaDB, only lowest php supported (1 browsers)
-    - "PHP=7.1 DB=mariadb GIT=v3.8.0 SUITE=behat BROWSER=firefox"
+    #- "PHP=7.1 DB=mariadb GIT=v3.8.0 SUITE=behat BROWSER=firefox"
     #- "PHP=7.1 DB=mariadb GIT=v3.7.2 SUITE=behat BROWSER=chrome"
     #- "PHP=7.0 DB=mariadb GIT=v3.5.8 SUITE=behat BROWSER=firefox"
 install:
     - git clone --branch $GIT --depth 1 git://github.com/moodle/moodle $HOME/moodle
     - cp config.docker-template.php $HOME/moodle/config.php
-    - cp composer.json $HOME/moodle/composer.json
     - export MOODLE_DOCKER_DB=$DB
     - export MOODLE_DOCKER_BROWSER=$BROWSER
     - export MOODLE_DOCKER_WWWROOT="$HOME/moodle"
