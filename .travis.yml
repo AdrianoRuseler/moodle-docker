@@ -64,7 +64,7 @@ install:
     - export MOODLE_DOCKER_PHP_VERSION=$PHP
 before_script:
     # - apt-get install git -y
-    - tests/setup.sh
+    - tests/setup.sh --prefer-source
 script:
     - tests/test.sh
 after_script:
