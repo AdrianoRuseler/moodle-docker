@@ -64,6 +64,7 @@ install:
     - export MOODLE_DOCKER_PHP_VERSION=$PHP
 before_script:
     - tests/setup.sh
+    - tests/setup.sh
 script:
     - tests/test.sh
 after_script:
