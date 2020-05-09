@@ -821,8 +821,8 @@
             "version": "dev-local",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moodlehq/php-webdriver.git",
-                "reference": "3df827208ec104a9716aa8c30741e330da620c1e"
+                "url": "https://github.com/instaclick/php-webdriver.git",
+                "reference": "7862f3e6ed7564ffb8c0f53d550b4fc594d57086"
             },
             "dist": {
                 "type": "zip",
