@@ -58,6 +58,7 @@ env:
 install:
     - git clone --branch $GIT --depth 1 git://github.com/moodle/moodle $HOME/moodle
     - cp config.docker-template.php $HOME/moodle/config.php
+    - cp composer.json $HOME/moodle/composer.json
     - export MOODLE_DOCKER_DB=$DB
     - export MOODLE_DOCKER_BROWSER=$BROWSER
     - export MOODLE_DOCKER_WWWROOT="$HOME/moodle"
