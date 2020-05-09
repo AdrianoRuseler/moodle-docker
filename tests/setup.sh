@@ -25,3 +25,7 @@ echo "Waiting for DB to come up"
 $basedir/bin/moodle-docker-wait-for-db
 echo "Running: $initcmd"
 $basedir/$initcmd
+
+echo "Running: $initcmd"
+$basedir/$initcmd
+
